@@ -39,7 +39,15 @@ people.every(p=>p.job==='doctor') //true
 people.find(p=>p.job==='engineer')// {alice}
 people.filter(p=>p.name==='engineer')// [{alice},{bob}]
 ```
-
+### Sort by attribute
+```javascript
+people.sort((a,b)=>a.name<b.name)
+/* Sort by name
+[ { id: 3, name: 'charlie', job: 'doctor' },
+  { id: 2, name: 'bob', job: 'engineer' },
+  { id: 1, name: 'alice', job: 'engineer' } ]
+*/
+```
 ## Chrome DevTools
 ### Edit pages live
 `document.designMode='on'`
